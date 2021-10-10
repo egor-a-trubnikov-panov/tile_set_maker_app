@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.App {
+    font-family: sans-serif;
+    text-align: center;
+    display: grid;
+    grid-template-columns: calc((100vw / 1.61803398875) - 30px) calc(100vw - (100vw / 1.61803398875) - 30px);
+    gap: 20px;
+    padding: 20px;
+    height: calc(100vh - 40px);
+}
+
+.fileDropp {
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2px;
+    padding: 2px;
+    background-color: rgba(0, 0, 0, 0.06) !important;
+    cursor: pointer;
+}
+
+.fileDropp img {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.canvas {
+    image-rendering: optimizeSpeed; /* Older versions of FF          */
+    image-rendering: -moz-crisp-edges; /* FF 6.0+                       */
+    image-rendering: -webkit-optimize-contrast; /* Safari                        */
+    image-rendering: -o-crisp-edges; /* OS X & Windows Opera (12.02+) */
+    image-rendering: pixelated; /* Awesome future-browsers       */
+    -ms-interpolation-mode: nearest-neighbor; /* IE                            */
+}
+
+.canvasWrapper {
+    border: 1px solid black;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    background-image: repeating-linear-gradient(45deg, #ccc 25%, transparent 25%, transparent 75%, #ccc 75%, #ccc), repeating-linear-gradient(45deg, #ccc 25%, #e5e5f7 25%, #e5e5f7 75%, #ccc 75%, #ccc);
+    background-position: 0 0, 10px 10px;
+    background-size: 20px 20px;
+}
+
+.tools {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
