@@ -7,6 +7,9 @@ rules.push({
 });
 
 module.exports = {
+  output: {
+    hashFunction: 'sha256',
+  },
   module: {
     rules,
   },

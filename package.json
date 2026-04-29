@@ -47,6 +47,7 @@
           "@electron-forge/plugin-webpack",
           {
             "mainConfig": "./webpack.main.config.js",
+            "port": 3010,
             "renderer": {
               "nodeIntegration": true,
               "config": "./webpack.renderer.config.js",

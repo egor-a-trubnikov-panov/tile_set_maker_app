@@ -4,6 +4,9 @@ module.exports = {
      * that runs in the main process.
      */
     entry: './src/index.ts',
+    output: {
+        hashFunction: 'sha256',
+    },
     // Put your normal webpack config below here
     module: {
         rules: require('./webpack.rules'),
